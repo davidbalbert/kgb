@@ -64,3 +64,24 @@ method                    invocations
 pretend_to_be_a_sheep     4
 think_for_yourself!       1
 ```
+
+##Install
+
+```
+$ gem install kgb
+```
+
+##Contributing
+
+1. Fork
+2. Branch
+3. Write code
+4. Commit
+5. Push
+6. Create Pull Request
+7. ...
+8. Profit!
+
+##License
+
+KGB is licensed under the MIT License. See LICENSE for more information.
