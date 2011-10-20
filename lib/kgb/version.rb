@@ -1,3 +1,3 @@
-module Kgb
+module KGB
   VERSION = "0.0.1"
 end

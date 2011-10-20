@@ -1,5 +1,5 @@
 require "kgb/version"
 
-module Kgb
+module KGB
   # Your code goes here...
 end

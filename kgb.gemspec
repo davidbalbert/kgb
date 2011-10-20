@@ -3,13 +3,13 @@ $:.push File.expand_path("../lib", __FILE__)
 require "kgb/version"
 
 Gem::Specification.new do |s|
-  s.name        = "kgb"
-  s.version     = Kgb::VERSION
+  s.name        = "KGB"
+  s.version     = KGB::VERSION
   s.authors     = ["David Albert"]
   s.email       = ["davidbalbert@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{KGB spies on your classes and tells you what methods are being called}
+  s.description = %q{KGB spies on your classes and tells you what methods are being called}
 
   s.rubyforge_project = "kgb"
 
