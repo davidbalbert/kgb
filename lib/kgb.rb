@@ -1,5 +1,4 @@
 require "kgb/version"
-
 require 'rcapture'
 
 module KGB
@@ -13,7 +12,6 @@ module KGB
   end
 
   def self.print_reports
-    puts
     @agents.each { |agent| agent.report }
   end
 
@@ -34,12 +32,15 @@ module KGB
 
     def report
       max_length = @invocations.keys.map { |key| key.length }.max
-      puts "#{@class}:"
-      puts
+      max_length = 6 if max_length < "method".length
 
-      puts "method" + " " * (max_length - 2) + "invocations"
+      say
+      say "#{@class}:"
+      say
+
+      say "method" + " " * (max_length - 2) + "invocations"
       @invocations.sort { |a, b| b[1] <=> a[1] }.each do |method, times|
-        puts method.to_s + " " * (max_length - method.length + 4) + times.to_s
+        say method.to_s + " " * (max_length - method.length + 4) + times.to_s
       end
     end
   end
@@ -48,3 +49,7 @@ end
 END {
   KGB.print_reports
 }
+
+def say(*args)
+  STDERR.puts(*args)
+end

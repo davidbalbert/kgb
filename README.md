@@ -52,3 +52,15 @@ KGB only tracks calls to instance methods defined on the object itself. Thus if 
 ```ruby
 KGB.spy_on(Socket, BasicSocket, IO)
 ```
+
+KGB prints to standard error so you can isolate it's output from the rest of the program:
+
+```
+$ ruby kgb_test.rb >/dev/null
+
+Winston:
+
+method                    invocations
+pretend_to_be_a_sheep     4
+think_for_yourself!       1
+```
