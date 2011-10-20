@@ -15,6 +15,8 @@ module KGB
     @agents.each { |agent| agent.report }
   end
 
+  PADDING = 4
+
   class Agent
     def initialize(klass)
       @invocations = {}
@@ -38,9 +40,9 @@ module KGB
       say "#{@class}:"
       say
 
-      say "method" + " " * (max_length - 2) + "invocations"
+      say "method" + " " * (max_length - 6 + PADDING) + "invocations"
       @invocations.sort { |a, b| b[1] <=> a[1] }.each do |method, times|
-        say method.to_s + " " * (max_length - method.length + 4) + times.to_s
+        say method.to_s + " " * (max_length - method.length + PADDING) + times.to_s
       end
     end
   end
