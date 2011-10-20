@@ -47,7 +47,7 @@ pretend_to_be_a_sheep     4
 think_for_yourself!       1
 ```
 
-KGB prints to standard error so you can isolate it's output from the rest of the program:
+KGB prints to standard error so you can isolate its output from the rest of the program:
 
 ```
 $ ruby kgb_test.rb >/dev/null
@@ -59,7 +59,7 @@ pretend_to_be_a_sheep     4
 think_for_yourself!       1
 ```
 
-KGB only tracks calls to instance methods defined on the object itself, not it's parents. Thus if you want to watch all of the `Socket` methods, you would want to do something like this:
+KGB only tracks calls to instance methods defined on the object itself, not its parents. Thus if you want to watch all of the `Socket` methods, you would want to do something like this:
 
 ```ruby
 KGB.spy_on(Socket, BasicSocket, IO)
