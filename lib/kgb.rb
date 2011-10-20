@@ -15,7 +15,6 @@ module KGB
     @agents.each { |agent| agent.report }
   end
 
-  PADDING = 4
 
   class Agent
     def initialize(klass)
@@ -31,6 +30,8 @@ module KGB
         @invocations[info.method] += 1
       end
     end
+
+    PADDING = 4
 
     def report
       max_length = @invocations.keys.map { |key| key.length }.max
