@@ -71,6 +71,11 @@ KGB.spy_on(Socket, BasicSocket, IO)
 $ gem install kgb
 ```
 
+##Questions you might have
+
+- Q: Why did you start at 0.9?
+A: I figured I was almost, done, but not quite. It's a small library.
+
 ##Contributing
 
 1. Fork
