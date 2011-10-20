@@ -1,7 +1,7 @@
 KGB
 ===
 
-KGB spies on your classes and tells you what methods are being called. I wrote it to let me see what methods were being called on the `socket` library while writing [eventless](http://github.com/davidbalbert/eventless).
+KGB spies on your classes and tells you what methods are being called. I wrote it to let me see what methods were being called on the `socket` library while writing [Eventless](http://github.com/davidbalbert/eventless).
 
 ##How it works
 

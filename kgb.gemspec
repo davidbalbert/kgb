@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["David Albert"]
   s.email       = ["davidbalbert@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{KGB spies on your classes and tells you what methods are being called}
-  s.description = %q{KGB spies on your classes and tells you what methods are being called}
+  s.summary     = %q{A little library for counting method invocations}
+  s.description = %q{A little library for spying on your classes and counting method invocations}
 
   s.rubyforge_project = "kgb"
 
