@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "kgb/version"
 
 Gem::Specification.new do |s|
-  s.name        = "KGB"
+  s.name        = "kgb"
   s.version     = KGB::VERSION
   s.authors     = ["David Albert"]
   s.email       = ["davidbalbert@gmail.com"]
