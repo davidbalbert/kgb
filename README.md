@@ -59,10 +59,10 @@ pretend_to_be_a_sheep     4
 think_for_yourself!       1
 ```
 
-KGB only tracks calls to instance methods defined on the object itself, not its parents. Thus if you want to watch all of the `Socket` methods, you would want to do something like this:
+KGB can spy on multiple classes too!
 
 ```ruby
-KGB.spy_on(Socket, BasicSocket, IO)
+KGB.spy_on(Socket, File)
 ```
 
 ##Install

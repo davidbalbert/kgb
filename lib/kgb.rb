@@ -26,7 +26,7 @@ module KGB
         include RCapture::Interceptable
       end
 
-      @class.capture :methods => @class.instance_methods(false) do |info|
+      @class.capture :methods => @class.instance_methods do |info|
         @invocations[info.method] ||= 0
         @invocations[info.method] += 1
       end
