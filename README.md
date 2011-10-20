@@ -47,12 +47,6 @@ pretend_to_be_a_sheep     4
 think_for_yourself!       1
 ```
 
-KGB only tracks calls to instance methods defined on the object itself. Thus if you want to watch all of the socket methods, you would want to do something like this:
-
-```ruby
-KGB.spy_on(Socket, BasicSocket, IO)
-```
-
 KGB prints to standard error so you can isolate it's output from the rest of the program:
 
 ```
@@ -63,6 +57,12 @@ Winston:
 method                    invocations
 pretend_to_be_a_sheep     4
 think_for_yourself!       1
+```
+
+KGB only tracks calls to instance methods defined on the object itself, not it's parents. Thus if you want to watch all of the `Socket` methods, you would want to do something like this:
+
+```ruby
+KGB.spy_on(Socket, BasicSocket, IO)
 ```
 
 ##Install
